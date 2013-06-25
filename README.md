@@ -56,6 +56,15 @@ Example:
     Logglier.new('https://logs.loggly.com/inputs/<id>',
                  :threaded => true)
 
+#### Proxy
+
+Logglier also supports proxy parameters.
+Four options are available proxy_addr, proxy_port, proxy_user and proxy_password.
+
+Example:
+
+    Logglier.new('https://logs.loggly.com/inputs/<id>', :proxy_addr => "127.0.0.1", :proxy_port => 3128)
+
 #### JSON Formatting
 
 add the ':format => :json' when creating a new Logglier instance. Make
